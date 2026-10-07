@@ -56,6 +56,10 @@ function ProjectCard({ project, onSelect, index }) {
 
 function ProjectDialog({ project, onClose }) {
   const dialog = useRef(null)
+  function closeDialog() {
+    dialog.current.close()
+    onClose()
+  }
   useEffect(() => {
     const element = dialog.current
     element.showModal()
@@ -66,8 +70,8 @@ function ProjectDialog({ project, onClose }) {
     }
   }, [])
   return (
-    <dialog ref={dialog} className="project-dialog" aria-label={`${project.title} project details`} onCancel={onClose} onClose={onClose} onClick={event => { if (event.target === event.currentTarget) onClose() }}>
-      <button className="dialog-close" aria-label="Close project details" onClick={onClose}>×</button>
+    <dialog ref={dialog} className="project-dialog" aria-label={`${project.title} project details`} onCancel={event => { event.preventDefault(); closeDialog() }} onClick={event => { if (event.target === event.currentTarget) closeDialog() }}>
+      <button className="dialog-close" aria-label="Close project details" onClick={closeDialog}>×</button>
       <ProjectArtwork kind={project.artwork} />
       <div className="dialog-content">
         <span className="eyebrow">{project.category} · Concept project</span>
