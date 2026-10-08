@@ -64,20 +64,25 @@ export default function About() {
                 </div>
             </section>
 
+            <section className="beyond-code">
+                <h2>Current place of <em>employment.</em></h2>
+                <span>{portfolio.currentEmployment}</span>
+            </section>
+
             <section className="section skills-section">
                 <div className="section-heading">
                     <div>
                         <span className="eyebrow">
-                            MY EVER-EVOLVING TOOLKIT
+                            MY EVER-EVOLVING SKILLS
                         </span>
 
                         <h2>
-                            Tools of <em>the trade.</em>
+                            My <em>skills.</em>
                         </h2>
                     </div>
 
                     <p>
-                        Different tools. One goal: make it meaningful.
+                        The more the merrier
                     </p>
                 </div>
 
@@ -97,12 +102,8 @@ export default function About() {
             </section>
 
             <section className="beyond-code">
-                <span className="eyebrow">
-                    WHEN THE LAPTOP CLOSES
-                </span>
-
                 <h2>
-                    There’s more to <em>the story.</em>
+                    There’s more to <em>my life.</em>
                 </h2>
 
                 <div>
