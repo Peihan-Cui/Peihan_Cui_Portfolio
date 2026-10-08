@@ -1,4 +1,3 @@
-// Replace the sample content below with your own information.
 export const portfolio = {
   name: 'Peihan Cui',
   firstName: 'Peihan',
