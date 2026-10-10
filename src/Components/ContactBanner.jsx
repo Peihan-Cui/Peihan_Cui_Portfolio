@@ -5,7 +5,7 @@ export default function ContactBanner() {
         <section className="contact-banner">
             <div>
                 <span className="eyebrow">HAVE SOMETHING IN MIND?</span>
-                <h2>Let’s make something <em>great.</em></h2>
+                <h2>Let’s make something <em>great</em> together!</h2>
             </div><a className="round-link" href="#contact" aria-label="Get in touch"><Arrow diagonal /></a>
         </section>
     )

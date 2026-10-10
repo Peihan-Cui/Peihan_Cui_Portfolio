@@ -39,11 +39,9 @@ export default function About() {
                     </span>
 
                     <h2>
-                        Good work starts
+                        First, solve the <em>problem</em>. <br /> Then, write the <em>code</em>.
                         <br />
-                        with <em>good questions.</em>
                     </h2>
-
                     {portfolio.bio.map((paragraph) => (
                         <p key={paragraph}>
                             {paragraph}
@@ -64,9 +62,14 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="beyond-code">
+            <section className="employment">
                 <h2>Current place of <em>employment.</em></h2>
-                <span>{portfolio.currentEmployment}</span>
+                <span className='experience-tile'>
+                    {portfolio.currentEmployment}
+                    <a className="round-link" href="#experience" aria-label="Get in touch">
+                    <Arrow diagonal />
+                </a>
+                </span>
             </section>
 
             <section className="section skills-section">

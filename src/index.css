@@ -11,10 +11,10 @@
   color-scheme: dark;
   --background: #131513;
   --surface: #1c1f1b;
-  --text: #f1f0e9;
-  --muted: #a0a39b;
-  --accent: #c1db93;
-  --border: #30342e;
+  --text: #c3e4ff;
+  --muted: #ad8bcf;
+  --accent: #ad8bcf;
+  --border: #513b6e;
 }
 
 * { box-sizing: border-box; }

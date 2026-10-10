@@ -1,11 +1,8 @@
-import { useState } from "react";
 import { portfolio } from "../data.js";
 import PageHeading from "../Components/PageHeading.jsx";
 import Arrow from "../Components/Arrow.jsx";
 
 export default function Contact() {
-    const [draftOpened, setDraftOpened] = useState(false);
-
     function handleSubmit(event) {
         event.preventDefault();
 
@@ -17,9 +14,8 @@ export default function Contact() {
             `Hi ${portfolio.firstName},\n\n${data.get("message")}\n\nFrom: ${data.get("name")}\nReply to: ${data.get("email")}`
         );
 
-        window.location.href = `mailto:${portfolio.email}?subject=${subject}&body=${body}`;
-
-        setDraftOpened(true);
+        window.location.href =
+            `mailto:${portfolio.email}?subject=${subject}&body=${body}`;
     }
 
     return (
@@ -64,8 +60,16 @@ export default function Contact() {
                             <a
                                 href={social.url}
                                 key={social.name}
-                                target="_blank"
-                                rel="noreferrer"
+                                target={
+                                    social.url.startsWith("http")
+                                        ? "_blank"
+                                        : undefined
+                                }
+                                rel={
+                                    social.url.startsWith("http")
+                                        ? "noreferrer"
+                                        : undefined
+                                }
                             >
                                 {social.name}
                                 <Arrow diagonal />
@@ -87,7 +91,6 @@ export default function Contact() {
                 <form
                     className="contact-form"
                     onSubmit={handleSubmit}
-                    onChange={() => setDraftOpened(false)}
                 >
                     <div className="form-row">
                         <label>
@@ -154,19 +157,8 @@ export default function Contact() {
                         Opens your email app with your message filled in.
                         Nothing is sent or stored by this website.
                     </p>
-
-                    {draftOpened && (
-                        <p
-                            className="form-status"
-                            role="status"
-                        >
-                            Your email app was requested. Review and send the
-                            draft there, or email {portfolio.email} directly if
-                            it didn’t open.
-                        </p>
-                    )}
                 </form>
             </section>
         </>
-    );
+    )
 }

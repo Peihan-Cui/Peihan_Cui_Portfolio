@@ -14,18 +14,17 @@ export default function Home({ onSelect }) {
                     </div>
 
                     <h1>
-                        Thoughtful code.
+                        Thoughtful ideas.
                         <br />
                         Meaningful
                         <br />
-                        <em>experiences.</em>
+                        <em>projects.</em>
                         <span className="hero-period">✳</span>
                     </h1>
 
                     <p>
                         I’m {portfolio.name}, a{" "}
-                        {portfolio.role.toLowerCase()} who brings ideas to life
-                        through clean code and considered design.
+                        {portfolio.role.toLowerCase()} who brings ideas to life and welcomes new opportunities.
                     </p>
 
                     <div className="hero-actions">
@@ -136,7 +135,7 @@ export default function Home({ onSelect }) {
                 <h2>
                     Curiosity is my compass.
                     <br />
-                    <em>Making things is my thing.</em>
+                    <em>Imagination is my drive.</em>
                 </h2>
 
                 <p>{portfolio.shortBio}</p>

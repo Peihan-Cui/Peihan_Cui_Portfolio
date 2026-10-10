@@ -27,7 +27,6 @@ export default function Projects({ onSelect }) {
                 A few explorations in design and development. Each one starts
                 with a question and ends with something you can use.
             </PageHeading>
-
             <div
                 className="filter-bar"
                 aria-label="Filter projects"
@@ -67,10 +66,12 @@ export default function Projects({ onSelect }) {
                 ))}
             </div>
 
-            <p className="template-note">
-                These are sample projects to help you get started.
-                Make this space your own.
-            </p>
+            <div className="project-card coming-soon-card">
+                <div className="coming-soon-content">
+                    <h3>More coming soon...</h3>
+                    <p>I'm always working on something new.</p>
+                </div>
+            </div>
 
             <ContactBanner />
         </>
