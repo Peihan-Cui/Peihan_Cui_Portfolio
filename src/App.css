@@ -2432,4 +2432,8 @@ h2 {
     .dialog-content h2 {
         font-size: 25px;
     }
+
+    .portrait-image {
+        width: 7rem;
+    }
 }
