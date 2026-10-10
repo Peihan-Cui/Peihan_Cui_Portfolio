@@ -37,8 +37,11 @@ export default function About() {
                         <span>{portfolio.name}</span>
                         <span>{portfolio.role}</span>
                     </div>
-
-                    <small>YOUR PHOTO COULD GO HERE</small>
+                    <img
+                        className="portrait-image"
+                        src="/HeadShot.jpg"
+                        alt={portfolio.name}
+                    />
                 </div>
 
                 <div className="about-copy">

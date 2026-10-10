@@ -1504,6 +1504,21 @@ h2 {
     color: var(--purple-soft);
 }
 
+.portrait-image {
+    display: block;
+    width: 10rem;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100px;
+    top: -50px;
+    left: 80px;
+    border: 1px solid var(--border-strong);
+    box-shadow: 0 12px 30px var(--card-shadow);
+    align-self: center;
+    position: relative;
+}
+
 .about-copy h2 {
     margin: 14px 0 23px;
 }
