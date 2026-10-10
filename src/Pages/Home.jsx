@@ -19,7 +19,15 @@ export default function Home({ onSelect }) {
                         Meaningful
                         <br />
                         <em>projects.</em>
-                        <span className="hero-period">✳</span>
+                        <span className="hero-period">
+                            <svg
+                                className="asterisk"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M12 2V22M2 12H22M4.9 4.9L19.1 19.1M19.1 4.9L4.9 19.1" />
+                            </svg>
+                        </span>
                     </h1>
 
                     <p>
@@ -71,7 +79,13 @@ export default function Home({ onSelect }) {
                     </div>
 
                     <div className="floating-label label-design">
-                        ✳ made with intention
+                        <svg
+                            className="asterisk"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M12 2V22M2 12H22M4.9 4.9L19.1 19.1M19.1 4.9L4.9 19.1" />
+                        </svg> made with intention
                     </div>
 
                     <div className="art-footer">
@@ -88,7 +102,15 @@ export default function Home({ onSelect }) {
                     {portfolio.skills.slice(0, 4).map((skill) => (
                         <span key={skill}>
                             {skill}
-                            <i>✳</i>
+                            <i>
+                                <svg
+                                    className="asterisk"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M12 2V22M2 12H22M4.9 4.9L19.1 19.1M19.1 4.9L4.9 19.1" />
+                                </svg>
+                            </i>
                         </span>
                     ))}
                 </div>
@@ -152,7 +174,13 @@ export default function Home({ onSelect }) {
                     className="about-asterisk"
                     aria-hidden="true"
                 >
-                    ✳
+                    <svg
+                        className="asterisk"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path d="M12 2V22M2 12H22M4.9 4.9L19.1 19.1M19.1 4.9L4.9 19.1" />
+                    </svg>
                 </span>
             </section>
 

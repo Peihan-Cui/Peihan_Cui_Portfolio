@@ -22,7 +22,15 @@ export default function About() {
 
                     <div className="portrait-monogram">
                         {portfolio.initials}
-                        <span>✳</span>
+                        <span>
+                            <svg
+                                className="asterisk"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M12 2V22M2 12H22M4.9 4.9L19.1 19.1M19.1 4.9L4.9 19.1" />
+                            </svg>
+                        </span>
                     </div>
 
                     <div className="portrait-caption">
@@ -95,10 +103,7 @@ export default function About() {
                             <span>
                                 {String(index + 1).padStart(2, "0")}
                             </span>
-
                             <h3>{skill}</h3>
-
-                            <Arrow diagonal />
                         </div>
                     ))}
                 </div>

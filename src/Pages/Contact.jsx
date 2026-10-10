@@ -78,7 +78,15 @@ export default function Contact() {
                     </div>
 
                     <div className="contact-note">
-                        <span aria-hidden="true">✳</span>
+                        <span aria-hidden="true">
+                            <svg
+                                className="asterisk"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M12 2V22M2 12H22M4.9 4.9L19.1 19.1M19.1 4.9L4.9 19.1" />
+                            </svg>
+                        </span>
 
                         <p>
                             No big pitch needed.
